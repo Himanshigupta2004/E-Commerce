@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="personalized.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="https://image.pngaaa.com/845/410845-small.png">
+    <title>GENX</title>
+</head>
+<body>
+  <a href="headphones.html"><i class="fa fa-arrow-circle-left" style="font-size:48px;color:red;margin-left: 2%;margin-top: 2%;"></i></a>
+    <main class="container">
+        <div class="left-column">
+          <img id="imagered" class="active" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRSLhMUWYbsSCIi9Qrxpx9zFMkEdo7zddafO2EAKXaPDQCAddxhNT5dk0rDzeqRWkPw50kPgjPtpXIK4VIdAwmuAgCN5SdyOv6c9mcu8AGBMyvAh_FrJf7eog&usqp=CAE">
+        </div>
+        <div class="right-column">
+          <div class="product-description">
+            <span>Headphones</span>
+            <h1>GENX</h1>
+            <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+          </div>
+          <div class="product-configuration">
+            <div class="product-color">
+              <span>Color</span>
+       
+              <div class="color-choose">
+                <div>
+                  <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                  <label for="red"><span></span></label>
+                </div>
+                <div>
+                  <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                  <label for="blue"><span></span></label>
+                </div>
+                <div>
+                  <input data-image="black" type="radio" id="black" name="color" value="black">
+                  <label for="black"><span></span></label>
+                </div>
+              </div>
+       
+            </div>
+            <div class="cable-config">
+              <span>Cable configuration</span>
+       
+              <div class="cable-choose">
+                <button>Straight</button>
+                <button>Coiled</button>
+                <button>Long-coiled</button>
+              </div>
+       
+              <a href="#">How to configurate your headphones</a>
+            </div>
+          </div>
+          <div class="product-price">
+            <span>Rs 2500</span>
+            
+          </div>
+        </div>
+      </main>
+      <script>
+
+        const imageredd=document.getElementById("imagered");
+        const redbtn=document.getElementById("red");
+        redbtn.addEventListener("click",function(){
+          imageredd.src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRSLhMUWYbsSCIi9Qrxpx9zFMkEdo7zddafO2EAKXaPDQCAddxhNT5dk0rDzeqRWkPw50kPgjPtpXIK4VIdAwmuAgCN5SdyOv6c9mcu8AGBMyvAh_FrJf7eog&usqp=CAE";
+        });
+        const bluebtn=document.getElementById("blue");
+        bluebtn.addEventListener("click",function(){
+        imageredd.src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSCpPrvOIT6R_aYvAcm5xdpn-GMibMr62_PujDDguDh7oO6sJNHIEeY6pARv1BjE9WffEbY1B2kPnrCEtfD3QbqwidCnguPXGcxRWcPuP7LqOG9yVmeZSoymQ&usqp=CAE";
+        });
+        const blackbtn=document.getElementById("black");
+        blackbtn.addEventListener("click",function(){
+          imageredd.src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRMsRyCOAIO312if08WK0gM01XLE1fmqQyepbGuQM8JwaBRdMdHZLk6Lrje-tHwhwbCNVN0Vcf246rrrw1wIeX9g8CEAanAiZ7xYGdoa1fVxyUhkyKYLOw6dQ&usqp=CAE";
+        });
+
+      </script>
+</body>
+</html>

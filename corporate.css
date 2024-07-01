@@ -1,0 +1,326 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    border-bottom: 1px solid grey;
+    height: 66px;
+}
+.top-element{
+    background-color: rgb(211, 211, 211);
+    height:30px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 20px;
+    
+  }
+  .dropdown span{
+    margin-right: 20px;
+    padding-top: 2px;
+    font-size: 20px;
+  }
+  .dropdown span:hover,.personalisation:hover,.latest:hover,.orders:hover,.bi:hover{
+    font-weight: bold;
+    color: rgb(175, 4, 4);
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    min-width: 160px; 
+    z-index: 1;
+    background-color: white;
+    color: black;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+  .dropdown-content a{
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block;
+  }
+  nav{
+    display: flex;
+  }
+  .personalisation,.latest,.orders{
+    padding-top: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .bi{
+    font-size: 30px;
+    margin-right:20px ;
+    padding-top: 15px;
+  }
+  /* search bar */
+  form.nosubmit {
+    border: none;
+    padding: 0;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  
+  input.nosubmit {
+    width: 260px;
+    border: 1px solid #555;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  
+
+  /* media query */
+  @media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .personalisation,
+    .latest,
+    .orders {
+        display: none;
+    }
+
+    form.nosubmit {
+        margin-left: 8px;
+        margin-right: 5px;
+    }
+}
+
+.btn:hover{
+  background-color: #555;
+  color: aliceblue;
+}
+.images
+{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+}
+
+.firstdiv
+{
+  /* border: 5px solid red; */
+  height: 800px;
+  background-image: url('https://hammeronline.in/cdn/shop/articles/Hammer_Active_2.0_plus_watch.png?v=1707550017&width=720');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second-div
+{
+  /* border: 2px solid black; */
+  background-color: #e9ecef;
+}
+.firstheading{
+  font-size: 70px;
+  font-weight: 900;
+  margin-top: 90px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 35px;
+}
+.secondheading{
+  font-size: 45px;
+  font-weight: 200;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 10px;
+  padding-left: 40px;
+}
+
+.thirdheading
+{ 
+  margin-top: 12%;
+  font-size: 45px;
+  font-weight: 900;
+  margin-left: 35px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subheading
+{ 
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 35px;
+  line-height: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tagline
+{
+  margin-left: 40px;
+  margin-top: 25px;
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn
+{
+  width: 400px;
+  height: 60px;
+  margin-left: 20%;
+  margin-top: 5%;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-style: none;
+}
+
+.itemwatch{
+  height: 400px;
+  width: 300px;
+  border:1px solid #ffffff;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20%;
+  background-color: #f8f9fa;
+}
+.products{
+  margin-left: 25px;
+  display: flex;
+}
+.itemwatch img{
+  height: 230px;
+  width: 300px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+#firstitem{
+  margin-left: 70px;
+}
+
+
+/* footer */
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+footer{
+  background-color: rgb(65, 63, 63);
+  padding: 70px 0;
+  margin-top: 50px;
+}
+.footer-col{
+  width: 25%;
+  padding:0 15px ;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+  
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing:border-box;
+  width: 50px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 10px;
+}
+.footer-col .social a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: grey;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media(max-width:767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media(max-width:574px){
+  .footer-col{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.bottomitem{
+  text-align: center;
+}
+.price{
+  text-align: center;
+}
+.btn3{
+  background-color: #24262b;
+  color: #ffffff;
+  height: 40px;
+  border: 1px solid #555;
+  border-radius: 50px;
+  width: 240px;
+  text-align: center;
+  margin-left: 24px;
+  margin-top: 8px;
+}
+.btn4{
+    background-color: #d4d5d8;
+    color: #090909;
+    height: 40px;
+    border: 1px solid #555;
+    border-radius: 50px;
+    width: 240px;
+    text-align: center;
+    margin-left: 24px;
+    margin-top: 3px;
+  }

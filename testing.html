@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section
+{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section1
+{
+    width: 25vw;
+    height: 100vh;
+    background-color: white;
+}
+.section2
+{
+    width: 75vw;
+    height: 100vh;
+    background-color: rgb(155, 206, 224);
+    display: flex;
+    align-items: center;
+    position: relative;
+    & .left
+    {
+        width: 37.5vw;
+        height: 80vh;
+        background-color: black;
+    }
+}
+
+.section2 .right
+{
+    width: 37.5vw;
+    height: 80vh;
+    background-color: brown;
+}
+
+.section2 .url
+{
+    position: absolute;
+    top:3%;
+    left: 20% ;
+    width: 30vw;
+    height: 6vh;
+}
+
+.section2 .icon
+{
+    position: absolute;
+    top:3%;
+    left: 60% ;
+    width: 6vw;
+    height: 6vh;
+    background-color: blue;
+}
+
+
+
+</style>
+<body>
+    <div class="main-section">
+        <div class="section1"></div>
+        <div class="section2">
+            <input type="text" placeholder="Enter the image url" class="url"><div class="icon"></div>
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+    </div>
+</body>
+</html>
